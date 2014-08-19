@@ -31,7 +31,7 @@ form{
 /* Home */
 
 html.home{
-	background: #EDECEA;
+	background: #231f20;
 }
 
 #home{
@@ -45,44 +45,79 @@ html.home{
 
 #home .hero{
 	width: 100%;
-	height: 446px;
-	background: url(/assets/home/hero.jpg) center center no-repeat;
-	background-size: 1600px 446px;
-	overflow: hidden;
-	position: relative;
-	letter-spacing: .09em;
-	margin: 0 auto;
+	height: 543px;
+	background: #ebeee7;
+  background-image: -webkit-gradient(
+  linear,
+  left top,
+  right top,
+  color-stop(0, #E4E7DE),
+  color-stop(0.4, #FBFCF9)
+);
+background-image: -o-linear-gradient(right, #E4E7DE 0%, #FBFCF9 40%);
+background-image: -moz-linear-gradient(right, #E4E7DE 0%, #FBFCF9 40%);
+background-image: -webkit-linear-gradient(right, #E4E7DE 0%, #FBFCF9 40%);
+background-image: -ms-linear-gradient(right, #E4E7DE 0%, #FBFCF9 40%);
+background-image: linear-gradient(to right, #E4E7DE 0%, #FBFCF9 40%);
 }
-
+#home .hero .wrapper{ 
+  width: 1366px;
+  height: 543px; 
+  margin: 0 auto;
+  background: url(/assets/home/main.png) left top no-repeat;
+}
+#home .hero .wrapper .right{ 
+  width: 60%; 
+  float: right;
+  text-align: center;
+  margin: 90px 0;
+}
 #home .hero .large{
-	font-weight: bold;
-	font-size: 40px;
-	color: #074E6F;
+	font-size: 26px;
+	color: #000;
 	text-transform: uppercase;
-	margin: 85px 0 0 136px;
+	margin: 0;
 	position: relative;
 	z-index: 2;
 	letter-spacing: 2px;
 }
-
+#home .hero .coming_soon{ 
+  color: #000;
+  text-transform: uppercase;
+  font-size: 26px; 
+  margin-top: 30px;
+  font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+}
 #home .hero .small{
-	font-weight: bold;
-	color: #955F5D;
-	font-size: 18px;
-	margin: 10px 0 0 115px;
-	line-height: 30px;
+	color: #000;
+	font-size: 28px;
+	line-height: 33px;
 	position: relative;
 	z-index: 2;
 	text-transform: uppercase;
 	text-align: center;
-	width: 375px;
-	letter-spacing: 1px;
+  margin-top: 60px; 
 }
 
+#home .logo a{ 
+	display: inline-block; 
+  background: url(/assets/home/logo.jpg) 0 0 no-repeat;
+  width: 307px; 
+  height: 102px; 
+  text-indent: -9999px; 
+  margin-top: 10px;
+}
+#home .divider {
+  background: #989495;
+  height: 3px;
+  width: 307px; 
+  font-size: 0px; 
+  margin: 25px auto; 
+}
 #home .form-wrap{
 	height: 80px;
-	width: 411px;
-	margin: 23px auto 0;
+	width: 610px;
+	margin: 50px auto 0;
 }
 
 #home .form-wrap .key{
@@ -94,36 +129,42 @@ html.home{
 }
 
 #home .form-wrap .byline{
-	font-size: 15px;
+	font-size: 20px;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: #fff;
 	text-align: center;
-	font-weight: bold;
+	
 	letter-spacing: 2px;
-	margin: 15px 0;
+	margin: 15px 0 25px;
+  font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 }
 
 #home .form-wrap .email{
 	float: left;
-	font-size: 13px;
-	padding: 8px 0 8px 10px;
+	font-size: 18px;
+	padding: 0 10px;
 	border: 1px solid #074E6F;
-	width: 256px;
+	width: 365px;
+  height: 50px;
+  line-height: 50px; 
 	outline: none;
 	letter-spacing: 1px;
+  font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 }
 
 #home .form-wrap .submit{
-	width: 143px;
-	background: #074E6F;
+	width: 208px;
+	background: #9d0164;
 	float: left;
-	height: 37px;
-	line-height: 37px;
+	height: 51px;
+	line-height: 51px;
 	color: #FFF;
-	font-size: 13px;
+	font-size: 18px;
 	text-transform: uppercase;
 	border: 0;
 	letter-spacing: 2px;
+  font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  margin-left: 10px; 
 }
 
 #home .form-wrap.ended{
@@ -255,7 +296,7 @@ html.home{
 }
 
 #refer .page-content{
-	width: 1120px;
+	width: 1366px;
 	margin: 0 auto;
 	z-index: 0;
 	position: relative;
@@ -263,7 +304,8 @@ html.home{
 
 #refer .header{
 	height: 50px;
-	background: #074E6F;
+  line-height: 50px;
+	background: #000;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -271,12 +313,11 @@ html.home{
 }
 
 #refer .header .content{
-	width: 315px;
-	margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
 }
 
 #refer .header p{
-	float: left;
 	color: #FFF;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -289,33 +330,73 @@ html.home{
 
 #refer .header .logo{
 	font-weight: normal;
-	font-size: 0;
-	line-height: 0;
-	margin-right: 14px;
-	letter-spacing: 1px;
-	background: url(/assets/refer/logo.png) 0 0 no-repeat;
-	background-size: 106px 19px;
-	height: 19px;
-	width: 106px;
-	margin-top: 15px;
+	font-size: 20px;
+	line-height: 50px;
 }
 
 #refer .hero{
-	background: #F1F0EE;
+  background: url(/assets/refer/main.png) 0 0 no-repeat;
+  background-size: 100% 546px;
 	height: 391px;
 	overflow: hidden;
 }
 
 #refer .mammoth{
-	width: 612px;
-	height: 394px;
-	background: url(/assets/refer/mammoth.png) 0 0 no-repeat;
-	background-size: 610px 394px;
+	width: 100%;
+	height: 546px;
+	background-size: 100% 546px;
 	overflow: hidden;
 	margin-top: 15px;
 	float: left;
 }
+#refer .mammoth .form_right{
+  background: rgba(255, 255, 255, .76);
+  width: 494px; 
+  height: 351px; 
+  margin: 5px 40px 10px 0; 
+  text-align: center;
+  float: right;
 
+}
+#refer .mammoth .form_right h1{
+  font-size: 33px; 
+  line-height: 36px; 
+  margin-top: 30px; 
+}
+#refer .mammoth .title{
+  background: #9c0059; 
+  color: #fff;
+  font-size: 20px;
+  line-height: 32px;  
+  padding-top: 3px;
+  height: 32px; 
+  width: 450px;
+  margin: 10px auto 15px; 
+}
+#refer .mammoth .share_email{
+  height: 40px; 
+  line-height: 40px;
+  width: 417px;
+  border: 1px solid #000;
+  margin: 10px 0 15px; 
+  padding: 0 10px;
+
+}
+#refer .mammoth .subtitle{
+  font-size: 13px; 
+  line-height: 18px; 
+  letter-spacing: 1px; 
+}
+#refer .mammoth .form_right .social-links{ width: 80px; margin: 0 auto; }
+#refer .mammoth .form_right .social-links a{
+  background: url(/assets/refer/social_icons.png) 0 0 no-repeat;
+  width: 35px;
+  height: 34px;
+  float: left;
+}
+#refer .mammoth .form_right .social-links .twit{
+  background-position: -40px 0;
+}
 #refer .mammoth .need{
 	color: #FFF;
 	font-size: 38px;
@@ -413,13 +494,13 @@ html.home{
 
 #refer .prizes .page-content{
 	position: relative;
+  max-width: 1210px;
 }
 
 #refer .prizes .callout{
 	text-align: center;
-	font-size: 16px;
-	color: #074E6F;
-	font-weight: bold;
+	font-size: 20px;
+	color: #000;
 	margin: 20px 0 0 0;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -428,11 +509,14 @@ html.home{
 #refer .prizes .progress{
 	height: 4px;
 	width: 100%;
-	background: url(/assets/refer/progress-bg.png) 0 0 repeat-x;
+  max-width: 1072px;
+	background: #000;
 	background-size: 1px 4px;
-	position: absolute;
-	top: 100px;
+	position: relative;
+	top: -60px;
 	z-index: 0;
+  margin: 0 auto;
+  box-shadow: -1px 2px 2px #666;
 }
 
 #refer .prizes .progress .mover{
@@ -441,14 +525,14 @@ html.home{
 	left: 0;
 }
 
-#refer .prizes .progress .mover .bar{
+/*#refer .prizes .progress .mover .bar{
 	background: url(/assets/refer/progress-done.png) 0 0 repeat-x;
 	width: 165px;
 	height: 4px;
 	-webkit-background-size: 1px 4px;
 	background-size: 1px 4px;
 }
-
+*/
 #refer .prize-two .progress .mover .bar{ width: 312px; }
 #refer .prize-three .progress .mover .bar{ width: 566px; }
 #refer .prize-four .progress .mover .bar{ width: 820px; }
@@ -466,13 +550,12 @@ html.home{
 #refer .prizes .products li.title{
 	height: 100%;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: #000;
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 20px;
 	float: left;
 	margin-right: 68px;
-	width: 165px;
-	font-weight: bold;
+	width: 250px;
 }
 
 #refer .prizes .products li.title .friends{
@@ -487,9 +570,9 @@ html.home{
 
 #refer .prizes .products li.product{
 	height: 100%;
-	color: #074E6F;
-	width: 125px;
-	margin-right: 129px;
+	color: #000;
+	width: 150px;
+	margin-right: 92px;
 	float: left;
 	position: relative;
 }
@@ -497,14 +580,13 @@ html.home{
 #refer .prizes .products li.product .circle{
 	height: 30px;
 	width: 30px;
-	border-radius: 15px;
-	border: 1px solid #DAD9D2;
+	border-radius: 30px;
+	border: 1px solid #000;
 	text-align: center;
 	line-height: 30px;
-	color: #868282;
+	color: #fff;
 	overflow: hidden;
-	background: #F1F0EE;
-	font-weight: bold;
+	background: #000;
 	margin: 0 auto;
 }
 
@@ -532,6 +614,9 @@ html.home{
 #refer .prizes .products li.product p{
 	text-align: center;
 	font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #93054b;
 }
 
 #refer .prizes .products li.product:last-child{
@@ -541,7 +626,16 @@ html.home{
 #refer .prizes .products li.product.last{
 	margin-right: 0;
 }
-
+#refer .prizes .products li.product.last p{
+  background: #9c0059;
+  color: #fff;
+  padding: 7px; 
+  width: 190px; 
+}
+#refer .prizes .products li.product.last p .heart{
+  font-size: 30px; 
+  font-family: arial;
+}
 #refer .prizes .products li.product.selected .circle{
 	background: #995F5E !important;
 	border-color: #995F5E !important;
@@ -555,14 +649,14 @@ html.home{
 
 #refer .prizes .products li.product:hover .circle{
 	color: #FFF;
-	background: #074E6F;
-	border-color: #074E6F;
+	background: #9c0059;
+	border-color: #9c0059;
 }
 
 #refer .prizes .products li.product .tooltip{
 	height: 254px;
 	width: 190px;
-	border: 4px solid #074E6F;
+	border: 4px solid #9c0059;
 	position: absolute;
 	top: -285px;
 	left: -32px;
@@ -581,21 +675,21 @@ html.home{
 
 #refer .prizes p.place{
 	text-align: center;
-	font-size: 16px;
-	color: #074E6F;
+	font-size: 17px;
+	color: #000;
 	width: 100%;
 	font-weight: 500;
-	margin-top: 30px;
+	margin: 90px 0 25px;
 }
 
 #refer .prizes p.place span{
-	color: #995F5E;
+	color: #000;
 }
 
 #refer .prizes p.check{
 	text-align: center;
-	font-size: 16px;
-	color: #858181;
+	font-size: 17px;
+	color: #000;
 	width: 100%;
 	font-weight: 500;
 	margin-top: 5px;
