@@ -12,7 +12,7 @@
                 <h2 class="title Metrophobic">INVITE THEM IN &amp; YOU'LL BE REWARDED.</h2>
                 <p class="subtitle Metrophobic">Share your unique link via email, Facebook and Twitter.<br />You'll be rewarded based on the number of friends that sign up.</p>
                 <p>
-                    <input type="text" class="share_email Metrophobic"/>
+                    <div class="share_email Metrophobic"><%= root_url %>?ref=<%= @user.referral_code %></div>
                 </p>
                 <% twitter_message = "#Shaving is evolving. Excited for @harrys to launch." %>
             <div class="social-links">
@@ -23,14 +23,14 @@
 
 
 
-            </div>   
+            </div>
         </div>
         <!-- <div class="share-wrap">
             <p class="why Metrophobic">Don't leave your friends behind</p>
             <p class="title Metrophobic">INVITE FRIENDS &<br>Earn Product</p>
             <p class="subtitle Metrophobic">Share your unique link via email, Facebook<br>or Twitter and earn Harry's goods for<br>each friend who signs up.</p>
             <div class="copy-link Metrophobic"><%= root_url %>?ref=<%= @user.referral_code %></div>
-            
+
         </div> -->
     </div>
 </div>

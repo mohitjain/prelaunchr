@@ -60,14 +60,14 @@ background-image: -webkit-linear-gradient(right, #E4E7DE 0%, #FBFCF9 40%);
 background-image: -ms-linear-gradient(right, #E4E7DE 0%, #FBFCF9 40%);
 background-image: linear-gradient(to right, #E4E7DE 0%, #FBFCF9 40%);
 }
-#home .hero .wrapper{ 
+#home .hero .wrapper{
   width: 1366px;
-  height: 543px; 
+  height: 543px;
   margin: 0 auto;
   background: url(/assets/home/main.png) left top no-repeat;
 }
-#home .hero .wrapper .right{ 
-  width: 60%; 
+#home .hero .wrapper .right{
+  width: 60%;
   float: right;
   text-align: center;
   margin: 90px 0;
@@ -81,12 +81,12 @@ background-image: linear-gradient(to right, #E4E7DE 0%, #FBFCF9 40%);
 	z-index: 2;
 	letter-spacing: 2px;
 }
-#home .hero .coming_soon{ 
+#home .hero .coming_soon{
   color: #000;
   text-transform: uppercase;
-  font-size: 26px; 
+  font-size: 26px;
   margin-top: 30px;
-  font-family: 'Metrophobic', Arial, serif; font-weight: 400; 
+  font-family: 'Metrophobic', Arial, serif; font-weight: 400;
 }
 #home .hero .small{
 	color: #000;
@@ -96,23 +96,23 @@ background-image: linear-gradient(to right, #E4E7DE 0%, #FBFCF9 40%);
 	z-index: 2;
 	text-transform: uppercase;
 	text-align: center;
-  margin-top: 60px; 
+  margin-top: 60px;
 }
 
-#home .logo a{ 
-	display: inline-block; 
+#home .logo a{
+	display: inline-block;
   background: url(/assets/home/logo.jpg) 0 0 no-repeat;
-  width: 307px; 
-  height: 102px; 
-  text-indent: -9999px; 
+  width: 307px;
+  height: 102px;
+  text-indent: -9999px;
   margin-top: 10px;
 }
 #home .divider {
   background: #989495;
   height: 3px;
-  width: 307px; 
-  font-size: 0px; 
-  margin: 25px auto; 
+  width: 307px;
+  font-size: 0px;
+  margin: 25px auto;
 }
 #home .form-wrap{
 	height: 80px;
@@ -133,10 +133,10 @@ background-image: linear-gradient(to right, #E4E7DE 0%, #FBFCF9 40%);
 	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
-	
+
 	letter-spacing: 2px;
 	margin: 15px 0 25px;
-  font-family: 'Metrophobic', Arial, serif; font-weight: 400; 
+  font-family: 'Metrophobic', Arial, serif; font-weight: 400;
 }
 
 #home .form-wrap .email{
@@ -146,10 +146,10 @@ background-image: linear-gradient(to right, #E4E7DE 0%, #FBFCF9 40%);
 	border: 1px solid #074E6F;
 	width: 365px;
   height: 50px;
-  line-height: 50px; 
+  line-height: 50px;
 	outline: none;
 	letter-spacing: 1px;
-  font-family: 'Metrophobic', Arial, serif; font-weight: 400; 
+  font-family: 'Metrophobic', Arial, serif; font-weight: 400;
 }
 
 #home .form-wrap .submit{
@@ -163,8 +163,8 @@ background-image: linear-gradient(to right, #E4E7DE 0%, #FBFCF9 40%);
 	text-transform: uppercase;
 	border: 0;
 	letter-spacing: 2px;
-  font-family: 'Metrophobic', Arial, serif; font-weight: 400; 
-  margin-left: 10px; 
+  font-family: 'Metrophobic', Arial, serif; font-weight: 400;
+  margin-left: 10px;
 }
 
 #home .form-wrap.ended{
@@ -278,7 +278,7 @@ background-image: linear-gradient(to right, #E4E7DE 0%, #FBFCF9 40%);
 	font-size: 14px;
 	text-align: center;
 }
- 
+
 
 
 /* Refer a friend page */
@@ -288,7 +288,7 @@ background-image: linear-gradient(to right, #E4E7DE 0%, #FBFCF9 40%);
 }
 
 .Metrophobic{
-	font-family: 'Metrophobic', Arial, serif; font-weight: 400; 
+	font-family: 'Metrophobic', Arial, serif; font-weight: 400;
 }
 
 #refer{
@@ -351,40 +351,39 @@ background-image: linear-gradient(to right, #E4E7DE 0%, #FBFCF9 40%);
 }
 #refer .mammoth .form_right{
   background: rgba(255, 255, 255, .76);
-  width: 494px; 
-  height: 351px; 
-  margin: 5px 40px 10px 0; 
+  width: 494px;
+  height: 351px;
+  margin: 5px 40px 10px 0;
   text-align: center;
   float: right;
 
 }
 #refer .mammoth .form_right h1{
-  font-size: 33px; 
-  line-height: 38px; 
-  margin-top: 30px; 
+  font-size: 33px;
+  line-height: 38px;
+  margin-top: 30px;
 }
 #refer .mammoth .title{
   color: #9c0059;
   font-size: 20px;
-  line-height: 32px;  
+  line-height: 32px;
   padding-top: 3px;
-  height: 32px; 
+  height: 32px;
   width: 450px;
-  margin: 10px auto 15px; 
+  margin: 10px auto 15px;
 }
 #refer .mammoth .share_email{
-  height: 40px; 
+  height: 40px;
   line-height: 40px;
-  width: 417px;
   border: 1px solid #000;
-  margin: 10px 0 15px; 
+  margin: 10px 0 15px;
   padding: 0 10px;
 
 }
 #refer .mammoth .subtitle{
-  font-size: 13px; 
-  line-height: 18px; 
-  letter-spacing: 1px; 
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
 }
 #refer .mammoth .form_right .social-links{ width: 80px; margin: 0 auto; }
 #refer .mammoth .form_right .social-links a{
@@ -628,11 +627,11 @@ background-image: linear-gradient(to right, #E4E7DE 0%, #FBFCF9 40%);
 #refer .prizes .products li.product.last p{
   background: #9c0059;
   color: #fff;
-  padding: 7px; 
-  width: 190px; 
+  padding: 7px;
+  width: 190px;
 }
 #refer .prizes .products li.product.last p .heart{
-  font-size: 30px; 
+  font-size: 30px;
   font-family: arial;
 }
 #refer .prizes .products li.product.last p strong{ font-weight: bold; margin-bottom: 5px; display: inline-block; }
