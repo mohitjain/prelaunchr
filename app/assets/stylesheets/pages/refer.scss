@@ -1,0 +1,125 @@
+.refer {
+    background: $white;
+
+    .header-bar {
+        background: $black;
+        color: $white;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .hero {
+        min-height: 420px;
+        background: url(refer/bg.jpg) no-repeat 15% top $darkBrown;
+        // -webkit-background-size: cover;
+        // -moz-background-size: cover;
+        // -o-background-size: cover;
+        // background-size: cover;
+
+        .panel {
+            background: $white;
+            background: rgba($white, 0.7);
+            text-align: center;
+            margin-top: 40px;
+
+            .panel-content {
+                padding: 10px 20px;
+            }
+
+            h3 {
+                font-size: 26px;
+                line-height: 1.4;
+                text-transform: uppercase;
+            }
+
+            .label.label-pink {
+                background: $pink;
+                color: $white;
+                padding: 4px;
+                text-transform: uppercase;
+            }
+
+            .share-message {
+                font-size: 12px;
+            }
+
+            .code-container {
+                background: $white;
+                border: 1px solid #ccc;
+                padding: 5px;
+                margin: 10px auto;
+            }
+        }
+    }
+
+    .rewards-section {
+        margin-top: 30px;
+    }
+
+    .products {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+
+        @media(max-width: 550px) {
+            font-size: 80%;
+        }
+
+        &:after {
+            content: '';
+            height: 3px;
+            width: 100%;
+            background: $black;
+            position: absolute;
+            top: 40px;
+        }
+
+        li {
+            width: 20%;
+            float: left;
+
+            .friends {
+
+            }
+
+            .rewards {
+                margin-top: 50px;
+            }
+
+            .circle {
+                text-align: center;
+
+                .badge {
+                    display: inline-block;
+                    border-radius: 12px;
+                    background: $pink;
+                    color: $white;
+
+                    height: 24px; 
+                    min-width: 24px;
+                    padding: 4px 3px 0 3px;
+                    text-align: center;
+
+                }
+            }
+
+            .product-text {
+                text-align: center;
+                margin-top: 40px;
+
+            }
+
+            &.last {
+                .product-text {
+                    background: $pink;
+                    color: $white;
+                    padding: 3px;
+                }
+            }
+        }
+
+
+    }
+}
