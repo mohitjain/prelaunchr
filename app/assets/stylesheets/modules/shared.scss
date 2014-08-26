@@ -1,0 +1,21 @@
+body {
+    background: $darkBrown;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    .container {
+        @media (min-width: 1200px) {
+            width: 940px;
+        }
+    }
+}
+
+.btn {
+    &.btn-pink {
+        background: $pink;
+        color: $white;
+        border-color: darken($pink, 2%);
+        &:hover, &.active {
+            background: darken($pink, 10%);
+        }
+    }
+}
