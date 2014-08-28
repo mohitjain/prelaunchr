@@ -14,14 +14,7 @@
         <meta property="og:description" content="Shaving is evolving. Didn’t want to leave you all behind. Check out Harry’s here."/>
         <meta property="og:image" content="<%= asset_path("refer/truman.png") %>"/>
         <meta property="og:url" content="<%= root_url %>"/>
-        <% if @is_mobile %>
-            <% if @bodyId == 'home' %>
-                <meta name="viewport" content="width=1600" />
-            <% else %>
-                <meta name="viewport" content="width=1120" />
-            <% end %>
-        <% end %>
-        
+ 
         <%= stylesheet_link_tag "application.css", :media => "all" %>
         <%= csrf_meta_tags %>
 </head>
