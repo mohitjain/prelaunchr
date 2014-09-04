@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
         },
         {
             'count' => 10,
-            "html" => "Free shipping<br />on your first order",
+            "html" => "$5 off your first order. <br />(covers shipping)",
             "class" => "three",
             "image" => ActionController::Base.helpers.asset_path("refer/truman@2x.png")
         },

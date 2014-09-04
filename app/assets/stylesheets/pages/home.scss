@@ -13,6 +13,12 @@
             text-transform: uppercase;
             font-size: 20px;
             letter-spacing: 0.3px;
+
+            .logo {
+                image {
+                    max-width: 100%;
+                }
+            }
         }
 
         .hero-line {
@@ -31,7 +37,7 @@
             margin-bottom: 50px;
         }
 
-        @media(max-width: 770px) {
+        @media(max-width: 767px) {
             min-height: 400px;
             background: $cream;
         }
@@ -60,7 +66,7 @@
             border-radius: 0;
         }
 
-        @media(max-width: 770px) {
+        @media(max-width: 991px) {
             .submit {
                 margin-top: 10px;
             }

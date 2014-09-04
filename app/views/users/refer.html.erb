@@ -24,9 +24,11 @@
 
                                 <% twitter_message = "#Shaving is evolving. Excited for @harrys to launch." %>
                                 <div class="social-links">
-                                    <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
+                                    <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="social-link twitter" target="_blank"></a>
+                                    
+                                    <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="social-link fb" target="_blank"></a>
                                     <div class="sep"></div>
-                                    <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
+                                    
                                 </div>
 
 
@@ -83,7 +85,10 @@ stops.reverse_each { |stop|
 
                             <div class="sep"></div>
 
-                            <p class="product-text"><%= stop["html"].html_safe %></p>
+                            <div class="text-container">
+                                <p class="product-text"><%= stop["html"].html_safe %></p>
+                            </div>
+
 
                             <!-- <div class="tooltip">
                                 <img src="<%= stop["image"] %>" height="254">

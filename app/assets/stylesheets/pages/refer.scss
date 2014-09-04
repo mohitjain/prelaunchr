@@ -9,6 +9,33 @@
         line-height: 40px;
     }
 
+    .social-links {
+        width: 95px;
+        margin: 0 auto;
+        overflow: hidden;
+        .social-link {
+            text-indent: -9999px;
+            width: 32px;
+            height: 32px;
+            display: block;
+            background-image: url("refer/social_icons.png");
+            margin: 0 5px;
+            float: left;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            &.fb {
+                background-position: -43px 0;
+            }
+
+            &.twitter {
+                background-position: 0 0;
+            }
+        }
+    }
+
     .hero {
         min-height: 420px;
         background: url(refer/bg.jpg) no-repeat 15% top $darkBrown;
@@ -34,10 +61,12 @@
             }
 
             .label.label-pink {
-                background: $pink;
-                color: $white;
+                // background: $pink;
+                color: $pink;
                 padding: 4px;
                 text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.1em;
             }
 
             .share-message {
@@ -63,9 +92,6 @@
         margin: 0;
         position: relative;
 
-        @media(max-width: 550px) {
-            font-size: 80%;
-        }
 
         &:after {
             content: '';
@@ -105,7 +131,7 @@
                 }
             }
 
-            .product-text {
+            .text-container {
                 text-align: center;
                 margin-top: 40px;
 
@@ -116,6 +142,52 @@
                     background: $pink;
                     color: $white;
                     padding: 3px;
+                }
+            }
+        }
+
+        @media(max-width: 550px) {
+            margin-bottom: 30px;
+            &:after {
+                content: '';
+                height: 3px;
+                width: 100%;
+                background: $black;
+                position: absolute;
+                top: 60px;
+            }
+
+            li {
+                width: 100%;
+                margin: 10px auto;
+
+                .circle, .friends {
+                    width: 30%;
+                    float: left;
+                }
+                .sep {
+                    display: none;
+                }
+
+                .text-container, .rewards {
+                    width: 70%;
+                    float: left;
+                    margin-top: 0;
+                }
+
+                .friends, .rewards {
+                    text-align: center;
+                }
+
+                &.last {
+                    .text-container {
+                        text-align: center;
+                        .product-text {
+                            display: inline-block;
+                            margin-top: 0;
+                        }
+                    }
+
                 }
             }
         }
